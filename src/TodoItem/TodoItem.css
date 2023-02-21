@@ -1,0 +1,36 @@
+.item {
+  background-color: white;
+  margin: 15px;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  position: relative;
+}
+.item .check {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.item .check img {
+  width: 20px;
+}
+.item .delete {
+  position: absolute;
+  top: -8px;
+  right: 5px;
+  font-weight: bold;
+}
+.item .delete:hover {
+  filter: opacity(0.5) drop-shadow(0 0 0 rgb(255, 0, 0));
+  cursor: pointer;
+}
+.item .delete img {
+  width: 20px;
+}
+.item .item-p--completed {
+  text-decoration: line-through;
+}
+.item .item-check--active img {
+  filter: opacity(0.4) drop-shadow(0 0 0 rgb(0, 255, 34));
+}
+
+/*# sourceMappingURL=TodoItem.css.map */

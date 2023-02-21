@@ -1,0 +1,61 @@
+.TodoForm {
+display: flex;
+flex-direction: column;
+align-items: center;
+background: rgb(34,193,195);
+background: linear-gradient(-45deg, rgb(226, 139, 177) 0%, rgb(235, 211, 222) 40%, rgb(206, 219, 235) 80%,  rgb(162, 190, 223)100%);
+width: 340px;
+height: 250px;
+border-radius: 5px;
+position: relative;
+animation: open 0.5s ease backwards;
+}
+
+label {
+color: black;
+font-weight: 700;
+margin: 20px 0;
+font-size: 25px;
+}
+
+textarea {
+max-width: 280px;
+min-width: 280px;
+min-height: 100px;
+padding: 5px;
+text-align: center;
+border: solid 1px rgb(96, 163, 218);
+outline: none;
+border-radius: 5px;
+}
+
+.TodoForm_Button {
+width: 90px;
+height: 30px;
+border: none;
+margin: 10px;
+border-radius: 5px;
+background: none;
+cursor: pointer;
+transition: 500ms ease box-shadow;
+}
+
+.TodoForm_Button:hover {
+box-shadow: 1px 1px 20px 6px rgb(200 200 200 / 78%);
+}
+.TodoForm_Button--add {
+background-color: rgb(162, 190, 223);
+}
+
+.TodoForm_Button--cancel {
+background-color: rgb(226, 139, 177);
+}
+
+@keyframes open {
+to {
+    right: 0;
+}
+from {
+    right: -100%;
+}
+}

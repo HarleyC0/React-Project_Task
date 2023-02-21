@@ -1,0 +1,13 @@
+
+.TodoCounter {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+    .YourTask {
+        font-size: 50px;
+        color: transparent;
+        background: linear-gradient(-45deg, rgb(226, 139, 177) 0%,  rgb(162, 190, 223)100%);
+        -webkit-background-clip: text;
+    }
+
+}
