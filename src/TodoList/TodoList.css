@@ -8,3 +8,12 @@
 .sectionList ul {
     list-style: none;
 }
+
+.sectionList::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sectionList::-webkit-scrollbar-thumb {
+    background-color: rgb(97, 39, 89);
+    border-radius: 5px;
+}
