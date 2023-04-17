@@ -1,5 +1,8 @@
-import react from "react";
+//import react from "react";
 import './TodoItem.css';
+import x from "../img/x.png";
+import cheque from "../img/cheque.png";
+
 
 function TodoItem(props){
 
@@ -8,7 +11,7 @@ function TodoItem(props){
             <span className={`check ${props.completed && 'item-check--active'}`}
                 onClick={props.onComplete}
             >
-                <img src="imgs/cheque.png"></img>
+                <img src={cheque} alt='Ok'></img>
             </span>
             <p className={`${props.completed && 'item-p--completed'}`}>
                 {props.text}
@@ -16,7 +19,7 @@ function TodoItem(props){
             <span className="delete"
                 onClick={props.onDelete}
             >
-                <img src="imgs/x.png"></img>
+                <img src={x} alt='X'></img>
             </span>
         </li>
     );

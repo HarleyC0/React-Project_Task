@@ -1,6 +1,7 @@
-import react from "react";
-import { TodoContext } from "../TodoContext";
+//import react from "react";
+//import { TodoContext } from "../TodoContext";
 import './CreateTodoButtom.css';
+import todoimg from "../img/todoimg.jpg";
 
 function CreateTodoButtom(props){
 
@@ -18,7 +19,7 @@ function CreateTodoButtom(props){
             >
                 Create task
             </button>
-            <img src="imgs/todoimg.jpg" alt="todos"/>
+            <img src={todoimg} alt="todos"/>
         </div>
     );
 }
